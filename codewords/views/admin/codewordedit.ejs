@@ -1,0 +1,182 @@
+<style>
+
+
+body {
+  background: #eee;
+}
+.container {
+  width: 40%;
+  margin: 30px auto;
+}
+.tag-container {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 6px;
+  overflow-x: scroll;
+}
+.tag-container .tag {
+  height: 30px;
+  margin: 5px;
+  padding: 5px 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  color: #333;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px #fff;
+  cursor: default;
+}
+.tag i {
+  font-size: 16px;
+  color: #666;
+  margin-left: 5px;
+}
+.tag-container input {
+  padding: 5px;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  font-family: 'Rubik';
+  color: #333;
+  flex: 1;
+}
+
+
+
+</style>
+<body>
+
+    <% include adminnav.ejs %>
+     
+    <h1>Edit Codeword</h1>
+
+    <% var inputval = val.codewords%>
+    <form  name="codeword" method="POST"  enctype="multipart/form-data" action="/admin/save">
+    <div class="container">
+        <br />
+        <br />
+        <div class="form-group">
+        <input type="text"  class="form-control" name="codeWordSetName" placeholder="Set Name" value="<%= val.codeWordSetName %>"> 
+        </div>
+        <div class="form-group">
+        <input type="hidden" value="<%= val.codewords %>" id="hiddednVal" name="codewords" />
+        <input type="hidden" value="<%= val._id %>"  name="_id" />    
+        </div>
+        <div class="tag-container" >
+            <div >
+            
+          <input value="<%= inputval %>"   id="selectClick" />  
+          </div>
+        </div>
+        <button type="submit" >Submit</button>
+      </div>
+    </form>
+</body>
+
+<script>
+
+function myFunction() {
+  document.getElementById("selectClick").click(); // Click on the checkbox
+}
+
+const tagContainer = document.querySelector('.tag-container');
+const input = document.querySelector('.tag-container input');
+
+let tags = [];
+
+function test(){
+    console.log(tags)
+}
+
+function createTag(label) {
+  const div = document.createElement('div');
+  div.setAttribute('class', 'tag');
+  const span = document.createElement('span');
+  span.innerHTML = label;
+  const closeIcon = document.createElement('i');
+  closeIcon.innerHTML = 'delete';
+  closeIcon.setAttribute('class', 'material-icons');
+  closeIcon.setAttribute('data-item', label);
+  div.appendChild(span);
+  div.appendChild(closeIcon);
+  return div;
+}
+
+function clearTags() {
+  document.querySelectorAll('.tag').forEach(tag => {
+    tag.parentElement.removeChild(tag);
+  });
+}
+
+function addTags() {
+  clearTags();
+  tags.slice().reverse().forEach(tag => {
+    tagContainer.prepend(createTag(tag));
+  });
+}
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+
+input.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+      e.target.value.split(',').forEach(tag => {
+          if(tag!=""){
+
+            tags.push(tag);  
+            console.log(tag);
+          }
+      
+      });
+      
+      addTags();
+      input.value = '';
+      console.log(tags);
+      document.getElementById("hiddednVal").value=tags;
+      //console.log(tags.split(","))
+
+      
+    }
+});
+
+input.addEventListener('click', (e) => {
+   
+      e.target.value.split(',').forEach(tag => {
+          if(tag!=""){
+            tags.push(tag);  
+          }
+      
+      });
+      
+      addTags();
+      input.value = '';
+    
+});
+
+document.addEventListener('click', (e) => {
+  console.log(e.target.tagName);
+  if (e.target.tagName === 'I') {
+    const tagLabel = e.target.getAttribute('data-item');
+    const index = tags.indexOf(tagLabel);
+    tags = [...tags.slice(0, index), ...tags.slice(index+1)];
+    document.getElementById("hiddednVal").value=tags;
+    addTags();    
+  }
+})
+
+input.focus();
+
+myFunction();
+
+
+</script>

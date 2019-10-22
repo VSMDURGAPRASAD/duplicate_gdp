@@ -1,0 +1,197 @@
+
+[
+    {
+        "email_id":"bmallikarjuna66@gmail.com",
+        "password": "bmalli",
+        "full_name": "Mallikarjun Bodepudi",
+        "role":"student"
+    },
+    {
+        "email_id":"geniusdexter833@gmail.com",
+        "password":"vamshi",
+        "full_name":"Vamshi Krishna Nuka",
+        "role":"student"        
+    },
+    {
+        "email_id":"dp.vinukonda@gmail.com",
+        "password":"password",
+        "full_name":"Durga Prasad Vinukonda",
+        "role":"student"
+    },
+    {
+        "email_id":"gmalli6@gmail.com",
+        "password": "malli12",
+        "full_name":"Malli Bodep",
+        "role":"student"
+    },
+    {
+        "email_id":"swathich@gmail.com",
+        "password":"ashfjbvn",
+        "full_name":"Swathi Ch",
+        "role":"student"
+    },
+    {
+        "email_id":"swathich417@gmail.com",
+        "password":"swathi@123",
+        "full_name":"Swathi Challagundla",
+        "role":"instructor"
+    },
+    {
+        "email_id":"swathibapatla8@gmail.com",
+        "password":"SWATHI",
+        "full_name":"Swathi Sree Challa",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"challagundlaswathi15@gmail.com",
+        "password":"SWATHICH",
+        "full_name":"Swathi Chowdary Challgun",
+        "role":"student"
+    },
+     {
+        "email_id":"melvingray@gmail.com",
+        "password":"MRNOKIA",
+        "full_name":"Melvin Gray",
+        "role":"student"
+    },
+     {
+        "email_id":"tray124@gmail.com",
+        "password":"PASSWORD",
+        "full_name":"TRAY Wind",
+        "role":"Instructor"
+    },
+     {
+        "email_id":"jillianlove@gmail.com",
+        "password":"SPREADLOVE@",
+        "full_name":"Jillian Giller",
+        "role":"Instructor"
+    },
+     {
+        "email_id":"krishnab111@gmail.com",
+        "password":"RAMRAMRAM",
+        "full_name":"krishna Bolla",
+        "role":"Instructor"
+    },
+     {
+        "email_id":"naveenb54@gmail.com",
+        "password":"Bhavya123@",
+        "full_name":"Naveen Bodepudi",
+        "role":"student"
+    },
+     {
+        "email_id":"twinklej33@gmail.com",
+        "password":"NoPassword#",
+        "full_name":"Twinkle janar",
+        "role":"Instructor"
+    },
+     {
+        "email_id":"kamalabrown@gmail.com",
+        "password":"proveYourself@3",
+        "full_name":"Kamala Brown",
+        "role":"Instructor"
+    },
+     {
+        "email_id":"sirigiris@gmail.com",
+        "password":"srinuvasa1232",
+        "full_name":"Srinu Sirigiri",
+        "role":"student"
+    },
+     {
+        "email_id":"manigiri11@gmail.com",
+        "password":"haollywood@123",
+        "full_name":"Mani Giridar",
+        "role":"student"
+    },
+    {
+        "email_id":"sneh123h@gmail.com",
+        "password":"password",
+        "full_name":"swathi Madhavar",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"malli@gmail.com",
+        "password":"password",
+        "full_name":"Sneha reddy Madhavar",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"billi@gmail.com",
+        "password":"password",
+        "full_name":"Sneharao Madhavaram",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"gilli@gmail.com",
+        "password":"password",
+        "full_name":"Malli Bodepudi",
+        "role":"student"
+    },
+    {
+        "email_id":"chillih@gmail.com",
+        "password":"password",
+        "full_name":"prasad Vinukonda",
+        "role":"student"
+    },
+    {
+        "email_id":"rayronb@gmail.com",
+        "password":"password",
+        "full_name":"Sai Vinukonda",
+        "role":"student"
+    },
+    {
+        "email_id":"shasshii@gmail.com",
+        "password":"password",
+        "full_name":"Mani Vinukonda",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"siddavatm@gmail.com",
+        "password":"password",
+        "full_name":"chiranjeevi Konidela",
+        "role":"student"
+    },
+    {
+        "email_id":"rajshkt@gmail.com",
+        "password":"password",
+        "full_name":"Sneha Madhavaram",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"ajay345@gmail.com",
+        "password":"password",
+        "full_name":"Pawan Konidela",
+        "role":"student"
+    },
+    {
+        "email_id":"swathi745@gmail.com",
+        "password":"password",
+        "full_name":"ramcharn Konidela",
+        "role":"student"
+    },
+    {
+        "email_id":"preetam745@gmail.com",
+        "password":"password",
+        "full_name":"kalyan konidela",
+        "role":"student"
+    },
+    {
+        "email_id":"vamshi745@gmail.com",
+        "password":"password",
+        "full_name":"saidhram Madhavaram",
+        "role":"student"
+    },
+    {
+        "email_id":"prasad745@gmail.com",
+        "password":"password",
+        "full_name":"abhi Madugula",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"saigadu745@gmail.com",
+        "password":"password",
+        "full_name":"preetam potu",
+        "role":"Instructor"
+    }
+
+
+]

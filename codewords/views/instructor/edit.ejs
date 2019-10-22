@@ -1,0 +1,32 @@
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <h2>Edit Course </h2>
+      <div class="content">
+          <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6  ">
+        
+        <form method="POST" action="/instructor/save/<%= instructors._id %>">
+          
+         
+            <!-- COMMON TO EDIT AND CREATE -->
+            <%include partial_edit.ejs %>
+              <input type="submit" value="Save" class="btn btn-primary" />
+              <input type="cancel" value="Cancel" class="btn btn-danger"   />
+        </form>
+        <br/>
+        
+        <form method="get" action="/instructor">
+          <input type="submit" value="Return to list" class="btn btn-caution" />
+        </form>
+      </div>
+      <div class="col-lg-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

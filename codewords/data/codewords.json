@@ -1,0 +1,807 @@
+[
+{
+"codewordset_type" : "Small",
+"codeword" : "PENCIL",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "SCALES",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "elephant",
+"is_assigned": true
+},
+{
+    "codewordset_type" : "Extra Large",
+   "codeword" : "STAIRS",
+   "is_assigned": true
+   },
+{
+ "codewordset_type" : "Large",
+ "codeword" : "FLIGHT",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "DANCES",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "RUNNING",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "SIGNING",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Small",
+"codeword" : "SATURN",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "LONG",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "PHYSCHOLOGY",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "small",
+"codeword" : "LIFT",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Small",
+ "codeword" : "PLUTO",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "snake",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "walk",
+"is_assigned": false
+},
+ {
+ "codewordset_type" : "Small",
+ "codeword" : "YOGA",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "lOVE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "GROUND",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "PARTICIPATION",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Small",
+"codeword" : "MOON",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "BELL",
+"is_assigned": false
+},
+{
+"codewordset_type" : "medium",
+"codeword" : "MOBILITY",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "small",
+"codeword" : "APPLE",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "Small",
+ "codeword" : "TOY",
+"is_assigned":  true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "JUNGLE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "BELT",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Small",
+"codeword" : "WINTER",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "LINK",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "TRUNK",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "Medium",
+"codeword" : "KINGFISHER",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "LITTLE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "RIVER",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "MOBILE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "STAR",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Small",
+"codeword" : "TWINKLE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "LATITUDE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "GINGER",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "Medium",
+"codeword" : "HORIZONTAL",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Small",
+ "codeword" : "VANILLA",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "FLYER",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "WIRED",
+"is_assigned": false
+},
+ {
+ "codewordset_type" : "Small",
+ "codeword" : "MODERN",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Medium",
+"codeword" : "TORNADO",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "CHANGES",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "BRANCH",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Extra Large",
+"codeword" : "CREATE",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "LUMB",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "DESK",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "FROZEN",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "MASTER",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Medium",
+"codeword" : "SAFARI",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "kING",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "TWITER",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Medium",
+"codeword" : "DRAGON",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "PARK",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "snake",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "walk",
+"is_assigned": false
+},
+ {
+ "codewordset_type" : "Small",
+ "codeword" : "YOGA",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Extra Large",
+"codeword" : "JEEP",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "HUNGER",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "DRUNK",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "FRIDGE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "JUMP",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Medium",
+"codeword" : "ALARM",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "SAND",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "SWIFT",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+"codeword" : "OPTIONAL",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "SOAR",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "CRACKED",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Lare",
+"codeword" : "OCEAN",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "OAKTREE",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "FUZZY",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "puzzle",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "active",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "acting",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "agency",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "amount",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "author",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "branch",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "bridge",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "budget",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "button",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "castle",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "counter",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "center",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "client",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "combat",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "danger",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "design",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "desert",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "doctor",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "dinner",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "editor",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "entity",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "expert",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "FAMILY",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "FOREST",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "GARDEN",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "HIDDEN",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "HONEST",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "HEALTH",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "INCOME",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "ISLAND",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "JUNIOR",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "LEADER",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "MARINE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "MARKET",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "MEMORY",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "NATURE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "OFFICE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "PARENT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "ORANGE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "ORIGIN",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "PLAYER",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "PERSON",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "PLANET",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "PRINCE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "REGION",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "ROBUST",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SCHOOL",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "REASON",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "RECORD",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "REMOTE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "RESULT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SCHEME",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SEASON",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SECOND",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SECTOR",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SELECT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SENIOR",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SERVER",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SIGNAL",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SISTER",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SOURCE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SPRING",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "STABLE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "STREET",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "STRICT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SUBMIT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SUMMIT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SWITCH",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "SYSTEM",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "TALENT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "TENDER",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "TENNIS",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "TARGET",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "TENANT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "THEORY",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "TICKET",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "TISSUE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "UPDATE",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "VALLEY",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "VOLUME",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "WEIGHT",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "WINDOW",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "WORKER",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "WRITER",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "YELLOW",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "WINNER",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "VISUAL",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "VICTIM",
+"is_assigned": true
+}
+]

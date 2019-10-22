@@ -1,0 +1,38 @@
+<div class="container-fluid" style="margin-top: 5em;">
+  <div class=row>
+    <div class="col col-md-12">    
+    
+     
+        <div class="content">
+            <h2>Add Course Name </h2>
+          <div class="row">
+            
+        <div class="col-lg-3"></div>
+          <div class="col-lg-6">
+            <form  name="instructor" method="POST"  enctype="multipart/form-data" action="/instructor/save">
+
+           
+              <!-- COMMON TO EDIT AND CREATE -->
+              <%include partial_edit.ejs%>
+
+                <div class="form-group">
+                  <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+                
+            </form>
+
+            <br/>
+
+            <form method="get" action="/instructor">
+              <input type="submit" value="Return to list" class="btn btn-caution" />
+            </form>
+          </div>
+          <div class="col-lg-3"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,111 @@
+<% include ../header %>
+<br/>
+<br/>
+
+<div class="container-fluid">
+    
+ <br>
+ <h1> Instructor Dashboard</h1>
+  
+    <div class="btn btn-info" style="margin-top: 10px; margin-left: 10px;" >
+       
+      
+       <a href="instructor/create" style="margin-top: 10px; margin-left: 10px">
+        Add Course
+        </a>
+      <!-- <p>There are 
+        <%= val.length %> courses.
+    </p> -->
+  </div>
+  <div class="row">
+    <% for ( let i = 0; i < val.length; i++) {   
+        instructor = val[i];   %>
+      <!-- <div class="panel panel-default">
+        <div class="panel-heading"></div>
+        <div class="text-muted pull-right"></div>
+        <div class="panel-body">
+          <br/> ID:
+<%=  instructor._id %>
+<br> CourseName:
+<%=instructor.coursename %>
+<br/> StartDate:
+<%=instructor.startdate%>
+<br/> EndDate:
+ <%=instructor.enddate%>
+ <br/> IntialLink:
+ <%=instructor.intiallink%>
+ <br/> FinalLink:
+ <%=instructor.finallink%>
+ <br/> Assign Student List:
+ <%=instructor.studentlist%>
+ <br/> CodewordSetName:
+ <%=instructor.codewordsetname%>
+
+    <br/>      
+    <br>
+    <br>
+    <a href="instructor/delete/<%= instructor._id %>" class="btn btn-danger"> Delete </a>
+    <a href="instructor/details/<%= instructor._id %>" class="btn btn-info"> Details </a>
+    <a href="instructor/edit/<%= instructor._id %>" class="btn btn-warning"> Edit </a>
+  </div>
+  </div> -->
+ 
+  <div class="col-lg-4">
+  <div class="card bg-light mb-3" style="max-width: 14rem; min-height: 10rem;">
+      <div class="card-body">
+        
+        <h5 class="card-header"><%=instructor.coursename %></h5>
+        <br>
+        <br>
+        <div class="row">
+          <label>No. of students: </label> <label><%=instructor.assignedCount %></label>
+        </div>
+        <div class="row">
+          <label>Fraction acknowledged: </label><label><%=instructor.readCount %></label>
+        </div>
+        <!-- <div class="row">
+        <label>Start Date :</label> <label> <%=instructor.startdate %></label>
+      </div>
+        <div class="row">
+        <label>End Date :</label> <label> <%=instructor.enddate %></label>
+      </div>
+        <div class="row">
+        <label>Student List :</label> <label> <%=instructor.studentlist %></label>
+      </div>
+        <div class="row">
+        <label>Code Words :</label> <label> <%=instructor.codewordsetname %></label>
+      </div>
+
+        <div class="row">
+       <label>Initial Link : </label> <a href="#" class="card-link"><%=instructor.intiallink %></a>
+      </div>
+       <div class="row">
+        <label>Final Link : </label><a href="#" class="card-link"><%=instructor.finallink %></a>
+      </div> -->
+      <!-- <div class="row">
+        <label># Assigned Students : </label><label><%=instructor.assignedCount %></label>
+      </div> -->
+      <a href="instructor/edit/<%=instructor._id %>">
+        <button class="btn btn-primary btn-sm float-left"
+        id="left" style="color :green"> Edit </button> 
+      </a>
+      <a href="instructor/delete/<%=instructor._id %>">
+        <button class="btn btn-primary btn-sm float-left"
+        id="right" style="color :crimson"> <span class="glyphicon glyphicon-trash"></span> Delete </button> 
+        </a> 
+      </div>
+      
+    </div>
+  </div>
+
+    <% } %>
+
+  </div>  
+ 
+
+</div>
+
+
+</div>
+
+ 

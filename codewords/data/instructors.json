@@ -1,0 +1,52 @@
+[
+    {
+        "_id": 1,
+        "coursename": "Coffee Mug",
+        "startdate": "Best mug ever!",
+        "enddate": "find",
+        "intiallink":"error",
+        "finallink":"all",
+        "studentlist":"",
+        "codewordsetname":"King"
+    },
+    {
+        "_id": 2,
+        "coursename": "Coffee Mugs",
+        "startdate": "Best mug evers!",
+        "enddate": "finds",
+        "intiallink":"errors",
+        "finallink":"alls",
+        "studentlist":"",
+        "codewordsetname":"King"
+    },
+    {
+        "_id": 3,
+        "coursename": "Coffee Muga",
+        "startdate": "Best mug evera!",
+        "enddate": "finda",
+        "intiallink":"errora",
+        "finallink":"alla",
+        "studentlist":"",
+        "codewordsetname":"King"
+    },
+    {
+        "_id": 4,
+        "coursename": "Coffee Mugw",
+        "startdate": "Best mug everw!",
+        "enddate": "findw",
+        "intiallink":"errorw",
+        "finallink":"allw",
+        "studentlist":"",
+        "codewordsetname":"King"
+    },
+    {
+        "_id": 5,
+        "coursename": "Coffee Mugd",
+        "startdate": "Best mug ever!d",
+        "enddate": "findd",
+        "intiallink":"errord",
+        "finallink":"alld",
+        "studentlist":"",
+        "codewordsetname":"King"
+    }
+]

@@ -1,0 +1,46 @@
+
+<body>
+
+    <% include adminnav.ejs %>
+
+<h1>Admin Instructor</h1>
+
+<table class="table table-striped">
+<thead>
+
+        <tr>
+                <td>Request Email</td>
+        
+               
+            </tr>
+
+</thead>
+<tbody>
+        <% for ( let i = 0; i < val.length; i++) {   
+            instructor = val[i];   %>
+    <tr>
+        <td><%=instructor.email%></td>
+        <td><button type="button" onclick="respondToRequest(true,'<%= instructor.email %>')" class="btn btn-success">Accept</button></td>
+        <td><button type="button" onclick="respondToRequest(false,'<%= instructor.email %>')" class="btn btn-danger">Decline</button></td>
+    </tr>
+    
+    <% } %>
+               
+    </tbody>
+</table>
+
+<script>
+
+
+       
+        
+    function respondToRequest(isagreed,instructorEmail){
+    
+      $.ajax({url: "/admin/requestForInstructorAcess",type: 'POST',data:{IsAgreed:isagreed,InstructorEmail:instructorEmail}, success: function(result){
+          
+        location.reload();
+         
+      }});
+    }
+    </script>
+</body>

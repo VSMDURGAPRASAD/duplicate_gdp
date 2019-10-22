@@ -1,0 +1,88 @@
+<div class="container-fluid">
+</br>
+  <h2> Student Dashboard</h1>
+
+<div class="container-fluid">
+ 
+  <div class="row">
+      <div>
+    
+    
+          <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right;">Instructor Access</button>
+        
+       
+    </div>
+  </div>
+  <div class="row">
+
+  <% for ( let i = 0; i < val.length; i++) {   
+    studentcourse = val[i];   %>
+    <div class="col-lg-4">
+    <div class="card" style="max-width: 15rem; min-height: 10rem;">
+    
+    <div class="card-body">
+    <h4 class="card-title"> <%= studentcourse.coursename%></h4>
+    
+    <!-- Links -->
+    <a href="#" class="card-link">Intial Survey Link : <%= studentcourse.intiallink %> </a></br>
+    <a href="#" class="card-link">Final Survey Link : <%= studentcourse.finallink %></a></br>
+      <br>
+
+      <% if (!studentcourse.isRead) { %>
+      <a href="#" class="btn btn-primary" style="width:100%; height:100%" onclick="markAsRead('<%=studentcourse.courseId%>');"> Reveal Codeword </a>
+      <% } %>
+      <% if (studentcourse.isRead) { %>
+      <div id="<%=i %>"">
+        <div> <%= studentcourse.codeword %>  </div>
+      </div> 
+      <% } %>
+    </div>
+    
+    </div>
+    </div>
+    <%}%>
+  </div>
+    </div>
+
+    </div>  
+
+
+<script>
+
+
+
+
+
+       
+        
+     
+function markAsRead(courseid){
+    
+    $.ajax({url: "/student/revealCode",type: 'POST',data:{courseId:courseid}, success: function(result){
+        
+      location.reload();
+       
+    }});
+  }
+
+
+
+ 
+
+function requestForacess(){
+
+  $.ajax({url: "/student/requestForInstructorAcess", success: function(result){
+      
+    alert(result)
+     
+  }});
+}
+</script>
+
+<style>
+
+.hidden{
+
+  display:none;
+}
+</style>

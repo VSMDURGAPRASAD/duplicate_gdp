@@ -1,0 +1,28 @@
+<% include ../header %>
+<br/>
+<br/>
+<h2>instructor details</h2>
+<br/> ID:
+<%=  instructor._id %>
+<br> CourseName:
+<%=instructor.coursename %>
+<br/> StartDate:
+<%=instructor.startdate%>
+<br/> EndDate:
+ <%=instructor.enddate%>
+ <br/> IntialLink:
+ <%=instructor.intiallink%>
+ <br/> FinalLink:
+ <%=instructor.finallink%>
+ <br/> Assign Student List:
+ <%=instructor.studentlist%>
+ <br/> Codeword Set Name:
+ <%=instructor.codewordsetname%>
+
+    <br/>      
+    <br/>
+    <br/>
+    <form method="get" action="/instructor">
+    <input type="submit" value="Return to list" class="btn btn-caution" />
+    </form>
+<!-- <% include ../footer %> -->

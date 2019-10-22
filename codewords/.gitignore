@@ -1,0 +1,46 @@
+.env
+env*
+node_modules/
+logs
+logs/
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+vscode/*
+.vscode
+vscode
+
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+pids
+results
+tmp
+
+# API keys and secrets
+.env
+
+# Dependency directory
+bower_components
+
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+
+

@@ -1,0 +1,118 @@
+<body>
+
+   
+
+        <% include adminnav.ejs %>
+
+        <br>
+        <br>
+        <br>
+        <h1> Codewords</h1>
+
+        <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title">Add Codeword</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+            <div class="form-group">
+                <label for="codewordname">Codeword Group Name</label>
+                <input type="text" class="form-control" id="codewordname" autocomplete="off" name="codewordname" value="<%= instructors.codewordname %>" required>
+              </div>
+
+              <label >CodewordValues</label>
+              <% 
+              var t = "1"; %>
+              <button  type="button"onclick="incremental()" style="float: right;">Add</button>
+              <input type="hidden" value="<%=t%>" id="increment"/>
+              <div id="add">
+              <div class="form-group">
+                  <input type='text' class='form-control' placeholder= "Codeword Name" name='item1'/>                
+               </div>
+             </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-default" >Save</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <div class="container">
+        <div id="accordion">
+          <% for ( let i = 0; i < val.length; i++) {   
+               codeword = val[i];   %>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
+                                <%=codeword.codeWordSetName %>
+                      </button>
+                      <a href="codewords/edit/<%=codeword.codeWordSetName %>" style="float: right"> Edit</a>
+                      <a href="codewords/delete/<%=codeword.codeWordSetName %>" style="float: right"> Delete</a>
+                    </h5>
+                    
+                  </div>
+              
+                  <div id="<%=codeword.codeWordSetName %>" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                    
+
+                                <% for ( let i = 0; i < codeword.codewords.length; i++) {   
+                                        codewordname = codeword.codewords[i];   %>
+                                        <p> <%=codewordname%> </p>
+                  
+                                        <% } %>
+
+                    </div>
+                  </div>
+                </div>
+                <% } %>
+         </div>
+        </div>
+
+</body>
+<script>
+ 
+function incremental(){
+
+  var addid = parseInt(document.getElementById("increment").value);
+  //document.getElementById("increment").value = temp+1;
+  //console.log(temp);
+
+  
+  var node = document.createElement("INPUT");
+  //var textnode = document.createTextNode("Water");
+ // node.appendChild(textnode);
+ var addList = document.getElementById('add');
+    var docstyle = addList.style.display;
+    if (docstyle == 'none') addList.style.display = '';
+
+   
+
+    var text = document.createElement('div');
+    text.className = 'form-group';
+    text.innerHTML = "<input type='text' class='form-control' placeholder='Codeword Name' name='item"+addid+"' style='padding:5px;' />";
+
+    addList.appendChild(text);
+}
+  //return false;
+
+
+
+
+</script>

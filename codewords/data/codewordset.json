@@ -1,0 +1,16 @@
+[
+    {
+        "CodeWordSetName": "fruits",
+        "CodeWordCreator": "Admin",
+        "isPermanent": true,
+        "Codewords": ["apple","banana"]
+    },
+    
+    {
+        "CodeWordSetName": "mobiles",
+        "CodeWordCreator": "Instructor",
+        "isPermanent": true,
+        "Codewords": ["apple","android"]
+    }
+
+]

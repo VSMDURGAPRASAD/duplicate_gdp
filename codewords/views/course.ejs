@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div >
+        <script src="text/javascript">
+          function addButton(){
+            var str= document.getElementById("usr").value;
+            window.alert("Values is "+str);
+          }
+            </script>
+    </div>
+
+<div class="container">
+  <h2>Add Course  </h2>
+  <form action="/instructor">
+    <div class="form-group">
+      <label for="usr">Course Name:</label>
+      <input type="text"  class="form-control" placeholder="CourseName" id="usr" name="coursename">
+       
+        <label class="control-label" for="date" aria-required="true"> Start Date</label>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+        <label class="control-label" for="date" aria-required="true">End Date</label>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+
+      <label  class="control-label"for="url">Intial Survey Link :</label>
+      <input class ="form-control" id="ilink" name="iurl" placeholder="Intial Survey Link" type="url"/>
+      <label  class="control-label"for="url">End Survey Link :</label>
+      <input class ="form-control" id="elink" name="eurl" placeholder="End Survey Link" type="url"/>
+      <label  class="control-label"for="slu">Student List Upload:</label>
+      <input class="form-control" id="slu" type="file" name="myFile">
+
+      <label  class="control-label"for="ascet">Assign Codeword set:</label>
+      <input class="form-control" id="ascet" type="file" name="myFile"></t>
+
+      <!-- <label for="acset">Assign Codeword set:</label>
+      <input type="password" class="form-control" id="acset" name="acs">
+       -->
+    
+
+       
+      <button type="cancel" class="btn btn-warning"><a href="/instructor">Cancel       </a>
+      </button>
+  </form>
+
+  <button onclick="addButton()" id = "subt" class="btn btn-primary">Submit</button>
+
+</div>
+</div>
+
+</body>
+
+
+</html>
