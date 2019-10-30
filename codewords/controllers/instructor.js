@@ -191,29 +191,30 @@ api.post('/save', async (req, res) => {
   console.log(item)
   
 
-  var contents = fs.readFileSync("codewords.json");
-  // Define to JSON type
-  var jsonContent = JSON.parse(contents);
-  console.log(jsonContent);
-
    var f = files[Object.keys(files)[0]];
     var wb = XLSX.readFile(f.path);
     
     var studentEmails= [];
+  console.log(wb.Strings);
+  console.log(wb.Strings.Count);
 
-    for (i = 3; i < parseInt(wb.Strings.Count); i++) {
+    for (i = 2; i < parseInt(wb.Strings.length)-1; i++) {
+      console.log(i);
+    //  console.log(wb.Strings)
      var tempe =  wb.Strings[i].t;
-      i++;
+    
       studentEmails.push(tempe);
       
     }
     
     console.log("test");
-    console.log(item.codewordsetname);
+    studentEmails.length;
+    console.log(studentEmails);
+    console.log(item.codewordSetname);
 
    // var codewordset = Codeword.find({codeWordSetName:""item.codewordsetname""});
 
-    var codewordstest=await Codeword.find({ codeWordSetName: item.codewordsetname });
+    var codewordstest=await Codeword.find({ codeWordSetName: item.codewordSetname });
   
     var codewords = codewordstest[0].codewords;
     
@@ -231,31 +232,44 @@ api.post('/save', async (req, res) => {
   
     console.log("saves");
     console.log(studentEmails);
+    var studentcoursearray=[];
 
-    for(i=0; i<studentEmails.length; i++){
+    for(j=0; j<studentEmails.length; j++){
      
     var studentcourse = new Studencourse()
-
+     console.log(j);
     console.log(item._id);
-    studentcourse.studentEmail = studentEmails[i];
+    studentcourse.studentEmail = studentEmails[j];
     studentcourse.courseId = item._id + "";
-    studentcourse.codeword = codewords[i];
+    studentcourse.codeword = codewords[j];
+
+    studentcoursearray.push(studentcourse);
+
 
     
 
-    try {
+    //try {
    
-      console.log("saves");
-      await studentcourse.save();
+      //console.log("saves");
+      //await studentcourse.save();
      // res.send(item);
-    } catch (err) {
-      res.status(500).send(err);
-    }
+    //} catch (err) {
+      //res.status(500).send(err);
+    //}
 
 
 
 
     }
+
+    Studencourse.collection.insert(studentcoursearray, function (err, docs) {
+      if (err){ 
+          return console.error(err);
+      } else {
+        console.log("Multiple documents inserted to Collection");
+      }
+    });
+
 
 
 

@@ -10,7 +10,7 @@
         <h1> Codewords</h1>
 
         <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" onclick="addsetup()" data-backdrop="static"  data-target="#myModal">Add Codeword</button>
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -20,33 +20,42 @@
     <div class="modal-content">
       <div class="modal-header">
         
-        <h4 class="modal-title">Add Codeword</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="titleval">Add Codeword</h4>
+        <button type="button" class="close" data-dismiss="modal"  onclick="location.reload()">&times;</button>
       </div>
       <div class="modal-body">
-        <form>
+        <form name="codeword" method="POST"  enctype="multipart/form-data" action="/admin/addCodewords">
 
             <div class="form-group">
                 <label for="codewordname">Codeword Group Name</label>
                 <input type="text" class="form-control" id="codewordname" autocomplete="off" name="codewordname" value="<%= instructors.codewordname %>" required>
               </div>
 
+             
+                
+                <input type="hidden" class="form-control" id="codewordId" autocomplete="off" name="codewordId" value="<%= instructors.Id %>" required>
+              
+              
+                <label id="val"></label>
               <label >CodewordValues</label>
               <% 
               var t = "1"; %>
+             
               <button  type="button"onclick="incremental()" style="float: right;">Add</button>
               <input type="hidden" value="<%=t%>" id="increment"/>
+              <input type="hidden" value="add" id="submittype" name="submittype"/>
               <div id="add">
               <div class="form-group">
-                  <input type='text' class='form-control' placeholder= "Codeword Name" name='item1'/>                
+                  <input type='text' class='form-control' title="Codeword should not contain similiar letter conectuively ike AA" pattern="^(?:(\w)(?!\1))+$" placeholder= "Codeword Name" name='item0' id="item0"/>                
                </div>
              </div>
+             <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.reload()">Close</button>
+              <button type="submit" class="btn btn-default" >Save</button>
+            </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-default" >Save</button>
-      </div>
+     
     </div>
 
   </div>
@@ -58,12 +67,23 @@
                codeword = val[i];   %>
                 <div class="card">
                   <div class="card-header" id="headingOne">
+                    <input type="hidden" id="hiddenCode<%=i%>" value="<%=codeword.codeWordSetName %>"/>
+                    <input type="hidden" id="hiddenValues<%=i%>"  value ="<%=codeword.codewords %>"/>
+                    <input type="hidden" id="hiddenId<%=i%>" value="<%=codeword._id %>"/>
                     <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
-                                <%=codeword.codeWordSetName %>
-                      </button>
-                      <a href="codewords/edit/<%=codeword.codeWordSetName %>" style="float: right"> Edit</a>
-                      <a href="codewords/delete/<%=codeword.codeWordSetName %>" style="float: right"> Delete</a>
+                     
+                      
+                      
+                    
+                      
+                   <form name="codeword" method="POST"  enctype="multipart/form-data" action="/admin/deletecodeword/<%=codeword._id %>">
+                        <button  type="button" class="btn btn-link"data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
+                         <h6><%=codeword.codeWordSetName %></h6> 
+                         </button>
+                        <button type="button" onclick="editsetup('<%=i%>')" class="btn btn-info btn-lg" style="float: right" data-toggle="modal" data-backdrop="static"  data-target="#myModal">Edit</button>
+                        
+                      <button type="submit" class="btn btn-info btn-lg"style="float: right"> Delete</button>
+                    </form>
                     </h5>
                     
                   </div>
@@ -88,17 +108,22 @@
 </body>
 <script>
  
-function incremental(){
+function incremental(initialvalue){
 
+  
   var addid = parseInt(document.getElementById("increment").value);
   //document.getElementById("increment").value = temp+1;
   //console.log(temp);
+  if(!initialvalue){
+    initialvalue=""
+  }
 
   
   var node = document.createElement("INPUT");
   //var textnode = document.createTextNode("Water");
  // node.appendChild(textnode);
  var addList = document.getElementById('add');
+ var countval =  document.getElementById('add').childElementCount;
     var docstyle = addList.style.display;
     if (docstyle == 'none') addList.style.display = '';
 
@@ -106,9 +131,47 @@ function incremental(){
 
     var text = document.createElement('div');
     text.className = 'form-group';
-    text.innerHTML = "<input type='text' class='form-control' placeholder='Codeword Name' name='item"+addid+"' style='padding:5px;' />";
+    text.innerHTML = "<input type='text' class='form-control' placeholder='Codeword Name' value='"+initialvalue+"' name='item"+countval+"' style='padding:5px;' />";
 
     addList.appendChild(text);
+
+    document.getElementById('val').innerHTML = countval+1;
+   
+}
+
+function addsetup(){
+  document.getElementById("titleval").innerHTML="Add Codewords"
+  document.getElementById('val').innerHTML = 1;
+}
+
+
+
+function editsetup(i){
+  document.getElementById("titleval").innerHTML="Edit Codewords"
+  document.getElementById("submittype").value = "edit"
+  document.getElementById("codewordId").value =  document.getElementById("hiddenId"+i).value;
+
+  var tee = "hiddenCode"+i
+  console.log(tee);
+  var params = document.getElementById(tee).value
+
+  document.getElementById("codewordname").value=params;
+
+ var codewordsval =  document.getElementById("hiddenValues"+i).value;
+ console.log(codewordsval);
+ var nameArr = codewordsval.split(',');
+ console.log(nameArr);
+ for(i =1;i<nameArr.length;i++){
+  incremental(nameArr[i],i);
+  
+ }
+  
+ document.getElementById("item0").value=nameArr[0];
+
+ 
+ document.getElementById('val').innerHTML = countval+1;
+  
+
 }
   //return false;
 

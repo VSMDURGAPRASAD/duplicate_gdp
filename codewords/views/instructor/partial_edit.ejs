@@ -29,16 +29,18 @@
     <div class="form-group">
     
       
-      <select class="form-control form-control-lg" id="codeword" autocomplete="off" name="codeword">
-          <option value="">Code Word</option>
+      <select class="form-control" id="codeword" autocomplete="off" name="codeword">
+         
           <% for ( let i = 0; i < codewords.length; i++) {   
             currentword = codewords[i];   %>
           <option value="<%=currentword.codeWordSetName%>">  <%=currentword.codeWordSetName%> </option>
           <%}%>
-        </select>
-        
+
+      </select>
+      
       <!-- <input type="text" class="form-control" id="codewordsetname" name="codewordsetname" value="<%= instructors.codewordsetname %>" required> -->
     </div>
+     
 
   <!-- <% include ../footer %> -->
   <script>
