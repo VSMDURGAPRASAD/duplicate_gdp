@@ -29,7 +29,7 @@
     "express-status-monitor": "^1.2.7",
     "express-validator": "latest",
     "formidable": "^1.2.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lodash.find": "latest",
     "lodash.findindex": "latest",
     "lodash.remove": "latest",
