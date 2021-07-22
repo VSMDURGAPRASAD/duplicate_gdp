@@ -44,7 +44,7 @@
     "save": "^2.4.0",
     "serve-favicon": "latest",
     "winston": "latest",
-    "xlsx": "^0.15.1"
+    "xlsx": "^0.17.0"
   },
   "scripts": {
     "start": "node app.js"
